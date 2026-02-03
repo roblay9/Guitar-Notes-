@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="styles.css">
+       
+        <title>GuitarNotes</title> 
+        <style> 
+
+        </style>
+
+        <a>
+            <article>
+                <h3>GuitarNotes</h3>
+            </article>
+        </a>
+    </head>
+
+    <script src="index.js"></script>
+    
+    <body>
+    
+<div class="navbar revealable.visible">
+    <header >
+    <ul>
+    <li><a href="#id-1"><button id = "theme-button"> Home</button></a></li>
+    <li><a href="#id-2"><button id = "theme-button">About </button></a></li>
+    <li><a href="#id-3"><button id = "theme-button">Guitars </button></a></li>
+    <li><a href="#id-4"><button id = "theme-button">RSVP</button></a></li>
+
+    <li><button id = "theme-button">Toggle Dark Mode</button></li>
+    </ul>
+</div>
+      
+        
+        <img id="header-img" src="GuitarNotes Pics/GNNewlogo.png" height = "250px" width = "500px"/>
+        <h1>GuitarNotes</h1>
+        <h2>The Go-To Website To Learn About Guitars!</h2>
+        <h3>Click on any of the following to learn more about a specific guitar</h3>
+        <button type="button">Acoustic</button>
+        <button type="button">Electric</button>
+        <button type="button">Classical</button>
+        <button type="button">Bass</button> 
+
+        <style>
+      
+        :root {
+            
+            --transition-duration: 0.5s;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            color: #374151; 
+            background-color: #f3f4f6; 
+            transition: background-color var(--transition-duration);
+        }
+
+        
+        .dark body {
+            color: #d1d5db; 
+            background-color: #111827;
+        }
+        
+        
+        .transition-theme * {
+            transition: background-color var(--transition-duration), 
+                        color var(--transition-duration), 
+                        border-color var(--transition-duration);
+        }
+        </style>
+        
+        
+        <h2>About GuitarNotes</h2>
+        <p>GuitarNotes is a website meant to help beginners 
+            understand the basics of guitars and what to 
+            expect with each guitar type. We deliever details of the 
+            characteristics and uses of different types of guitars and providing
+            a platform to reserve guitar lessons to let you play your heart out!
+        </p>
+
+
+        </ul>
+        </div>
+
+       
+        <h2 style = "text-align: center">Guitars</h2>
+        
+        <img alt="Acoustic Guitar" src="GuitarNotes Pics/Acoustic Guitar.jpg" height = "250px" width = "500px" class = "revealable.visible"/>
+        <h3 style = "text-align: center">Acoustic Guitar</h3>
+        <p>The most popular and foundational instrucment for songwriters and performers. The 
+            acoustic guitar offers a warm, resonant, and naturally loud tone, thanks to its large 
+            hollow body that amplifies the vibration of the strings. It requires no external amplifier,
+            making it the ultimate grab-and-go instrument for campfire singalongs, street performances,
+            folk music, and country rhythms. Whether you're a beginner learning your first cords or an 
+            experienced musician crafting a new balland, the acoustic is a timeless, essential addition to 
+            your collection.
+        </p>
+            
+        <img alt="Electric Guitar" src="GuitarNotes Pics/Electric Guitar.jpg" height = "250px" width = "500px" style = "-ms-flex-item-align: center" class = "revealable.visible"/>
+        <h3 style = "text-align: center">Electric Guitar</h3>
+        <p>The instrument that defined modern music and sonic innovation. Unlike its acoustic counterparts, the electirc
+            guitar relies on magnetic pickups and an external amplifier to shape its sound. This allows for an unlimited palette
+            of tones, from clean and shimmering to heavily distorted and aggressive. It is the core sound of rock, blues, metal, pop,
+            and fusion. Choose your model based on the pickups (single-coil for brightness, humbuckers for power) and unlock a world of
+            expressive techniques like bending, vibrato, and blazing solos.
+        
+        </p>
+
+        <img alt="Bass Guitar" src="GuitarNotes Pics/Bass guitar.jpg" height = "250px" width = "500px" class = "revealable.visible"/>
+        <h3 style = "text-align: center">Bass Guitar</h3>
+        <p>The indispensable heartbeat of any band or ensemble. The bass guitar (typically with four thick 
+            strings tuned an octave lower than the lowest four guitar strings) provides the rhythmic and harmonic
+            foundation that locks the drums and guitars together. Its deep, powerful, and often mellow tone creates the groove
+            and pocket of the music. Whether laying down smooth lines in jazz, driving the tempo in rock, or providing the backbone
+            in funk, the bass is the instrument that makes people move.</p>
+
+
+        <img alt="Classical" src="GuitarNotes Pics/Classical Guitar.jpg" height = "250px" width = "500px" class = "revealable.visible"/>
+        <h3 style = "text-align: center">Classical Guitar</h3>
+        <p>
+            A sophisticated instrument with a legacy rooted in centuries of music. The classical guitar is distinguished by its softer, mellower tone 
+            produced by nylon strings and a fan braced body design. It is the perfect choice for fingerstyle playing.
+            Spanish flamenco, clasical compositions, and bossa nova. The wider, flat fingerboard makes intricate passages easier, while the nylon strings
+            are gentle on the fingertips, offering a warm, intimate, and singing voice unlike any other guitar.
+        </p> 
+
+
+         
+<div id="rsvp">
+    <h2>RSVP</h2>
+    <div class="rsvp-container">
+        <div class="rsvp-para">
+        </div>
+        <div class="rsvp Guitar Lessons">
+            <p>🎟️ RSVP a guitar lesson near your area.</p>
+        </div>
+    </div>
+
+    
+    <div class="form-container">
+        <form id="rsvp-form" title="rsvp-form">
+            <div class = "mb-6">
+                <label for = "fullName" class ="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                <input
+                type="text"
+                id = "fullName"
+                name="fullName"
+                required
+                placeholder="John Doe"
+                class = "w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border=indigo-500 transition duration-150"
+                >
+            </div>
+
+            <div class = "mb-6">
+                <label for = "Home State" class = "block text-sm font-medium text-gray-700 mb-2">Home State</label>
+                <input
+                type="Home State"
+                id = "Home State"
+                name = "Home State"
+                required
+                placeholder = "FL"
+                class = "w-full px-4 py-2 border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focusLring-indigo-500 focus:border-indigo-500 transition duration-150"
+                >
+            </div>
+
+            <div class="mb-6">
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="jane.doe@example.com"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150"
+                    >
+            </div>
+        </form>
+      
+        <button id="rsvp-button" class = "revealable.visible">Submit RSVP</button>
+    </div>      
+</div>
+
+
+
+
+      
+        <h2>Links</h2>
+
+       
+        <a class="block revealable.visible" href="https://www.codepath.org">
+            <article>
+                <h3>Guitar Center</h3>
+                
+            </article>
+        </a>
+            
+        
+         <script src="index.js"></script>
+        
+         
+<div id="success-modal" class="modal">
+    <div class="modal-container">
+        <div id="modal-item">
+            <p>Thank You for Signing Up!</p>
+             
+        </div>
+        <div id="modal-item">
+           
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
